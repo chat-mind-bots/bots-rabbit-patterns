@@ -2,6 +2,10 @@ name: Publish Package to npmjs
 on:
   release:
     types: [published]
+
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,8 +18,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@chat-mind-bots'
-      - name: Authenticate with private NPM package
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: yarn
       - run: yarn build
       - name: Set version from release tag
@@ -25,5 +27,3 @@ jobs:
           yarn version --new-version $RELEASE_VERSION --no-git-tag-version
 
       - run: yarn publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
