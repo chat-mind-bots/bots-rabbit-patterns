@@ -17,6 +17,7 @@ jobs:
       - name: Authenticate with private NPM package
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: yarn
+      - run: yarn build
       - name: Set version from release tag
         run: |
           RELEASE_VERSION=${GITHUB_REF/refs\/tags\//}
