@@ -1,9 +1,8 @@
 {
   "name": "@chat-mind-bots/rabbit-patterns",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "",
-  "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
