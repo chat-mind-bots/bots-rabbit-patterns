@@ -337,10 +337,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@chat-mind-bots/bots-models@^1.1.1":
-  version "1.1.1"
-  resolved "https://npm.pkg.github.com/download/@chat-mind-bots/bots-models/1.1.1/e9b603522262d938663ab38c11acbb3654a3cebb#e9b603522262d938663ab38c11acbb3654a3cebb"
-  integrity sha512-6d8VqWKgCcx7tvBuC3/HCY90z5zTiFK/TBw1wfVlolLZXpshVyzKRAuVpFlMVcaHFkLc8ffWJl1Mr3PqnbUbjg==
+"@chat-mind-bots/bots-models@^1.1.6":
+  version "1.1.6"
+  resolved "https://npm.pkg.github.com/download/@chat-mind-bots/bots-models/1.1.6/3f298b1cc61ad5ae012cb60faf65adaf516b6be4#3f298b1cc61ad5ae012cb60faf65adaf516b6be4"
+  integrity sha512-tMc4ft/FExWpHGSGLe33AwkK6oKjhg2cDSepLQ259NUJr66nl6ErOcFdBizwHGnaTvyXEe5Js2DQ6NptjbiGrQ==
   dependencies:
     "@nestjs/common" "^10.0.0"
     "@nestjs/core" "^10.0.0"
