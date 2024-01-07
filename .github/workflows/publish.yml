@@ -2,6 +2,10 @@ name: Publish Package to npmjs
 on:
   release:
     types: [published]
+
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,5 +27,3 @@ jobs:
           yarn version --new-version $RELEASE_VERSION --no-git-tag-version
 
       - run: yarn publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
