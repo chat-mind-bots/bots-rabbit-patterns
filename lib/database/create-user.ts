@@ -1,4 +1,4 @@
-import { CreateUserDto } from '@chat-mind-bots/bots-models/lib';
+import { CreateUserDto } from '@chat-mind-bots/bots-models';
 
 export const CREATE_USER = 'CREATE_USER';
 
